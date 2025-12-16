@@ -20,7 +20,7 @@ def send_mail_func(subject, recipient_list, from_email, html_body, host_password
         subject, 
         text_content, 
         from_email, 
-        to=[from_email], 
+        to=recipient_list, 
         bcc=recipient_list,
         connection=connection
     )
