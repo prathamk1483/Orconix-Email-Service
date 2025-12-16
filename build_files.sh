@@ -1,16 +1,10 @@
 echo "Deployment started"
 
-python3.12 -m venv env
+# REMOVE the venv lines (python3.12 -m venv env / source env...) if you haven't already!
 
-source env/bin/activate
+# Update this line to include djangorestframework
+python3.12 -m pip install Django==5.1.6 djangorestframework sqlparse==0.5.3 tzdata==2025.1
 
-echo "Environment created"
-
-pip install --upgrade pip
-pip install Django==5.1.6 sqlparse==0.5.3 tzdata==2025.1
-
-echo "Installing PsycoPG"
-
-python manage.py collectstatic --noinput
+python3.12 manage.py collectstatic --noinput
 
 echo "Deployment completed"
