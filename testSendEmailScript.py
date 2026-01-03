@@ -8,12 +8,12 @@ payload = {
     'subject': "Your Account Has been Debited",
     
     # Note: The backend expects "toEmails" (plural) as a list string
-    'toEmails': "['kubetkarpratham14@gmail.com']", 
+    'toEmails': "['kubetkarpratham14@gmail.com','hatekaramay25@gmail.com']", 
     
     'fromEmail': "orconixindia@gmail.com",
     
     # Note: Backend expects "emailBody" (not htmlBody)
-    'emailBody': "<h1>This is the mail sent via new Email server of Orconix.</h1><p>This was a test email to prank you, written by Pratham.</p>",
+    'emailBody': "<h1>If you see this mail send a ScreenShot to Pratham</h1><p>This was a test email to check Django's SMTP Server</p>",
 
     # CRITICAL: You must provide the App Password for the 'fromEmail' account
     'hostPassword': "isxp fmco olwu gtnw" 
